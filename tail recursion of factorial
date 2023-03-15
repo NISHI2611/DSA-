@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int fac(int x, int y=1){
+if(x==0)
+{
+return y;}
+else{
+return fac(x-1,y*x);
+}
+
+int main(){
+int n;cin>>n;
+int res=fac(n);
+return 0;
+}
+
